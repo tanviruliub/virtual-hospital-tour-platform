@@ -274,11 +274,24 @@ export default function PanoramaViewer({
             {zone.floorLevel}F
           </div>
           <div>
-            <h2 className="text-sm md:text-base font-bold text-slate-900 leading-tight">
-              {language === "bn" ? zone.nameBn : zone.name}
-            </h2>
-            <p className="text-xs text-blue-600 font-semibold">
-              {zone.floor} • 360° Interactive Tour
+            <div className="flex items-center gap-1.5">
+              <select
+                value={zone.id}
+                onChange={(e) => onNavigateZone(e.target.value)}
+                className="bg-transparent font-bold text-slate-900 cursor-pointer focus:outline-none text-xs md:text-sm hover:text-blue-600 transition-colors py-0.5"
+                title="Switch Hospital Zone"
+              >
+                {HOSPITAL_ZONES.map((z) => (
+                  <option key={z.id} value={z.id}>
+                    {language === "bn" ? z.nameBn : z.name} ({z.floor})
+                  </option>
+                ))}
+              </select>
+            </div>
+            <p className="text-[11px] text-blue-600 font-semibold flex items-center gap-1">
+              <span>{zone.floor}</span>
+              <span>•</span>
+              <span className="text-slate-500 font-normal">Click title to jump zone</span>
             </p>
           </div>
         </div>
