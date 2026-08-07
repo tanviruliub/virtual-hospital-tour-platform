@@ -70,7 +70,7 @@ export default function Home() {
           </div>
           <div>
             <h1 className="text-base md:text-lg font-bold text-slate-900 leading-tight flex items-center gap-2">
-              <span>CarePath Virtual</span>
+              <span>Virtual Hospital Tour Platform</span>
               <span className="hidden sm:inline-block text-[10px] bg-blue-50 text-blue-700 border border-blue-200 px-2.5 py-0.5 rounded-full font-semibold">
                 St. Jude General Hospital
               </span>

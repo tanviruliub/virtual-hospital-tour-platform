@@ -2,8 +2,8 @@ import type {Metadata} from 'next';
 import './globals.css'; // Global styles
 
 export const metadata: Metadata = {
-  title: 'My Google AI Studio App',
-  description: 'My Google AI Studio App',
+  title: 'Virtual Hospital Tour Platform',
+  description: 'Interactive 360° virtual hospital tour, personalized route planner, AI avatar assistant, 3D medical visualization, pediatric adventure game, and clinical training simulation.',
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
