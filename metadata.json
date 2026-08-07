@@ -1,0 +1,6 @@
+{
+  "name": "Virtual Hospital Tour Platform",
+  "description": "Interactive 360° virtual hospital tour, personalized route planner, AI avatar assistant, 3D medical visualization, pediatric adventure game, and clinical training simulation.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
